@@ -9,8 +9,8 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_my_medication)
-/*
+        setContentView(R.layout.activity_main)
+
 //        Some Additional Code
 //        The code below is used to rename the activity name on the menu bar
         val actionBar = supportActionBar
@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         myRewardsBtn.setOnClickListener() {
             val intent = Intent(this, MyRewards::class.java)
             startActivity(intent)
-        } */
+        }
+
+        val myMedicationBtn: Button = findViewById (R.id.myMedicationBtn)
+        myMedicationBtn.setOnClickListener() {
+            val intent = Intent(this, MyMedication::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -7,6 +7,7 @@
     android:background="#F8F7F7"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="350dp"
@@ -16,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="5dp"
         app:cardBackgroundColor="#EBC1BC"
@@ -209,7 +210,7 @@
     </HorizontalScrollView>
 
     <Button
-        android:id="@+id/all_rewards"
+        android:id="@+id/all_medication"
         android:layout_width="328dp"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
