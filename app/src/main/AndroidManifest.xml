@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediMindPrototypeV1">
-<!--        Changes to these activity navigation can be done by setting the ParentActivityName-->
+        <!-- Changes to these activity navigation can be done by setting the ParentActivityName -->
         <activity
             android:name=".MyRewards"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MyMedication"
             android:exported="false"
