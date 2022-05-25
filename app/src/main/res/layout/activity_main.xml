@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Background2"
+    android:background="@drawable/background2"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -70,10 +70,12 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/my_medications_btn"
+                        android:background="@color/white"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/medicine" />
+                        android:src="@drawable/medicine"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -103,7 +105,9 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/my_rewards_btn"
+                        android:background="@color/white"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/medal" />
@@ -136,7 +140,9 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/my_reports_btn"
+                        android:background="@color/white"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/report" />
@@ -169,7 +175,9 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/my_info_btn"
+                        android:background="@color/white"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/info" />
