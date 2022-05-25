@@ -3,16 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/drawable/ic_baseline_navigate_before_24.xml" value="0.196" />
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.196" />
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.196" />
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/drawable/rwds_progressbar.xml" value="0.187" />
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/font/roboto_bold.xml" value="0.396875" />
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/font/roboto_thin.xml" value="0.396875" />
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/layout/activity_my_medication.xml" value="0.25" />
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/layout/activity_my_rewards.xml" value="0.25" />
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/menu/home_nav.xml" value="0.33" />
+        <entry key="..\:/Users/Tom/Desktop/Deakin University/Team-Eternals/app/src/main/res/layout/activity_main.xml" value="0.31666666666666665" />
       </map>
     </option>
   </component>
