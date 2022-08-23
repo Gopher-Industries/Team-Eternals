@@ -8,10 +8,14 @@
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/layout/activity_my_rewards.xml" value="0.25" />
         <entry key="..\:/Users/Kishen/AndroidStudioProjects/MediMindPrototypev1/app/src/main/res/menu/home_nav.xml" value="0.33" />
         <entry key="..\:/Users/Tom/Desktop/Deakin University/Team-Eternals/app/src/main/res/layout/activity_main.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/drawable/ic_baseline_navigate_before_24.xml" value="0.106" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_my_medication.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_my_rewards.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

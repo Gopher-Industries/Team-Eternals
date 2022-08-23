@@ -17,16 +17,17 @@ class MainActivity : AppCompatActivity() {
         actionBar!!.title = "Home"
 
 //        The code below is used to set an onClickListener using the latest version of Kotlin
-        val myRewardsBtn: Button = findViewById (R.id.myRewardsBtn)
+        /*val myRewardsBtn: Button = findViewById (R.id.myRewardsBtn)
         myRewardsBtn.setOnClickListener() {
             val intent = Intent(this, MyRewards::class.java)
             startActivity(intent)
-        }
+        }*/
 
+        /*
         val myMedicationBtn: Button = findViewById (R.id.myMedicationBtn)
         myMedicationBtn.setOnClickListener() {
             val intent = Intent(this, MyMedication::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 }
