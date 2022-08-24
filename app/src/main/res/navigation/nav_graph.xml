@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MyRewardsNavigation">
+
+    <fragment
+        android:id="@+id/MyRewardsNavigation"
+        android:name="com.example.medimindrewards.MyRewardsFragment"
+        android:label="@string/my_rewards_fragment_label"
+        tools:layout="@layout/fragment_myrewards">
+
+        <action
+            android:id="@+id/action_MyRewardsFragment_to_MyWishlistFragment"
+            app:destination="@id/MyWishlistNavigation" />
+        <action
+            android:id="@+id/action_MyRewardsFragment_to_AllRewardsFragment"
+            app:destination="@id/AllRewardsNavigation" />
+        <action
+            android:id="@+id/action_MyRewardsFragment_to_ExistingRewardsFragment"
+            app:destination="@id/ExistingRewardsNavigation" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/MyWishlistNavigation"
+        android:name="com.example.medimindrewards.MyWishlistFragment"
+        android:label="@string/my_wishlist_fragment_label"
+        tools:layout="@layout/fragment_mywishlist">
+
+        <action
+            android:id="@+id/action_MyWishlistFragment_to_MyRewardsFragment"
+            app:destination="@id/MyRewardsNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AllRewardsNavigation"
+        android:name="com.example.medimindrewards.AllRewardsFragment"
+        android:label="@string/my_wishlist_fragment_label"
+        tools:layout="@layout/fragment_allrewards">
+
+        <action
+            android:id="@+id/action_AllRewardsFragment_to_MyRewardsFragment"
+            app:destination="@id/MyRewardsNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExistingRewardsNavigation"
+        android:name="com.example.medimindrewards.ExistingRewardsFragment"
+        android:label="@string/my_wishlist_fragment_label"
+        tools:layout="@layout/fragment_exisitngrewards">
+
+        <action
+            android:id="@+id/action_ExistingRewardsFragment_to_MyRewardsFragment"
+            app:destination="@id/MyRewardsNavigation" />
+    </fragment>
+</navigation>
