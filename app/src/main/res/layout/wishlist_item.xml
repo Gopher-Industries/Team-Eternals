@@ -29,7 +29,6 @@
                 android:textColor="#013A8F"
                 android:fontFamily="sans-serif"
                 android:textSize="25sp">
-
             </TextView>
             <TextView
                 android:id="@+id/wishlistItemID"

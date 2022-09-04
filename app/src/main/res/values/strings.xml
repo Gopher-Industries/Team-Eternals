@@ -33,4 +33,6 @@
     <string name="claim_item">CLAIM</string>
     <string name="type_items">TYPE</string>
     <string name="view_all_item">VIEW ALL</string>
+    <string name="my_report_title">My Report</string>
+    <string name="date_placeholder_myreport">Date Placeholder</string>
 </resources>
