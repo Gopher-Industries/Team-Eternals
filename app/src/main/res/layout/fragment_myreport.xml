@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <ImageButton
         android:id="@+id/backButtonMyReport"
@@ -50,8 +52,9 @@
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/rounded_border"
+        android:elevation="8dp"
         app:layout_constraintTop_toBottomOf="@id/titleMyReport"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -89,28 +92,85 @@
             />
     </LinearLayout>
 
-    <View
+    <LinearLayout
         android:id="@+id/missedDoses"
         android:layout_width="380dp"
-        android:layout_height="250dp"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/layout_rounded"
+        android:elevation="8dp"
         app:layout_constraintTop_toBottomOf="@id/date"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/missedDosesCircle"
-        android:background="#808080"
-        />
+        >
 
-    <View
+        <TextView
+            android:id="@+id/titleBarchart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missed Doses"
+            android:textColor="#013A8F"
+            android:textSize="30sp"
+            android:layout_gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/missedDosesCircle"
         android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@id/missedDoses"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_rounded"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#808080"
-        />
+        app:layout_constraintTop_toBottomOf="@id/missedDoses">
+
+        <TextView
+            android:id="@+id/titleGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Missed Doses"
+            android:textColor="#013A8F"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/takenProgressBar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle"
+                tools:progress="60"
+                android:layout_gravity="center"
+                />
+
+            <ProgressBar
+                android:id="@+id/missedProgressBar"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginLeft="-173"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle"
+                tools:progress="30"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
