@@ -20,6 +20,8 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
+
+
     <ImageButton
         android:id="@+id/homeButtonMyReport"
         android:layout_width="85dp"
@@ -158,7 +160,7 @@
                 android:id="@+id/missedProgressBar"
                 android:layout_width="145dp"
                 android:layout_height="145dp"
-                android:layout_marginLeft="-173"
+                android:layout_marginLeft="-173dp"
                 android:indeterminateOnly="false"
                 android:progressDrawable="@drawable/circle"
                 tools:progress="30"
