@@ -3,6 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+=======
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/activity_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/content_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/fragment_allrewards.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/fragment_exisitngrewards.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/fragment_mymedication.xml" value="0.25" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/fragment_myrewards.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/fragment_mywishlist.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/Team-Eternals/app/src/main/res/layout/mymedication_item.xml" value="0.18125" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/allmedication_item.xml" value="0.20427350427350427" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/content_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allmedicaiton.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allmedication.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_exisitngrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_myrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_mywishlist.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/activity_main.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_exisitngrewards.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_myaccount.xml" value="0.25" />
+        <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_myrewards.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_mywishlist.xml" value="0.2838541666666667" />
+>>>>>>> 0f01e93c4d32cf73335467782efa2f2c882558b5
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.269" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.191" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.269" />

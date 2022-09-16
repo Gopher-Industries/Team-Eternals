@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MyMedicationFragment">
+
+    <ImageButton
+        android:id="@+id/backButtonMyMedication"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#E6E6E6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/todo1" />
+
+    <ImageButton
+        android:id="@+id/homeButtonMyMedication"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#E6E6E6"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleMyMedication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/my_medication"
+        android:textColor="#013A8F"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@+id/homeButtonMyMedication"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButtonMyMedication"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#DDA2B6"
+        android:backgroundTint="#E68B85"
+        android:text="@string/next_appointment_10_days"
+        android:textAlignment="center"
+        android:textColor="#013A8F"
+        android:textSize="39sp"
+        android:textAllCaps="true"
+        app:cornerRadius="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMyMedication" />
+
+    <ImageButton
+        android:id="@+id/backMyMedication"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#E6E6E6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <ImageButton
+        android:id="@+id/nextMyMedication"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E6E6E6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrownext"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/today"
+        android:textAlignment="center"
+        android:textColor="#013A8F"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/nextMyMedication"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/backMyMedication"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppointment" />
+
+    <Button
+        android:id="@+id/btnAllMedication"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#013A8F"
+        android:fontFamily="sans-serif"
+        android:text="@string/all_medication"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
