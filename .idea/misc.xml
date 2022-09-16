@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/allmedication_item.xml" value="0.20427350427350427" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/content_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allmedicaiton.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allmedication.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_allrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_exisitngrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_myrewards.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/parmi/AndroidStudioProjects/Team-Eternals/Team-Eternalsm/app/src/main/res/layout/fragment_mywishlist.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/activity_main.xml" value="0.2838541666666667" />
         <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_exisitngrewards.xml" value="0.2838541666666667" />
         <entry key="..\:/Users/aufb/AndroidStudioProjects/Team-Eternals/app/src/main/res/layout/fragment_myaccount.xml" value="0.25" />

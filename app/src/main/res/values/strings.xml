@@ -25,6 +25,12 @@
     <string name="existing_rewards_title">Existing Rewards</string>
     <string name="home_icon_rewards">home icon</string>
     <string name="back_icon_rewards">back icon</string>
+    <string name="all_medication">All Medication</string>
+    <string name="logo">Logo</string>
+    <string name="medicine_name">Medicine name</string>
+    <string name="dosage_information">Dosage Information</string>
+    <string name="mental_health">MENTAL HEALTH</string>
+    <string name="todo">TODO</string>
     <string name="welcome_to_your_profile_title">WELCOME TO YOUR PROFILE</string>
     <string name="voucher">Voucher:</string>
     <string name="unknown">Unknown</string>
