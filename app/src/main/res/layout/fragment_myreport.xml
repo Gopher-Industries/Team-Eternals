@@ -20,8 +20,6 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-
-
     <ImageButton
         android:id="@+id/homeButtonMyReport"
         android:layout_width="85dp"
@@ -168,8 +166,6 @@
                 />
 
         </LinearLayout>
-
-
 
 
     </LinearLayout>
