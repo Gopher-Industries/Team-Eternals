@@ -25,4 +25,14 @@
     <string name="existing_rewards_title">Existing Rewards</string>
     <string name="home_icon_rewards">home icon</string>
     <string name="back_icon_rewards">back icon</string>
+    <string name="voucher">Voucher:</string>
+    <string name="unknown">Unknown</string>
+    <string name="points1">Points:</string>
+    <string name="voucher_item">VOUCHER</string>
+    <string name="type_item">TYPE</string>
+    <string name="claim_item">CLAIM</string>
+    <string name="type_items">TYPE</string>
+    <string name="view_all_item">VIEW ALL</string>
+    <string name="my_report_title">My Report</string>
+    <string name="date_placeholder_myreport">Date Placeholder</string>
 </resources>
