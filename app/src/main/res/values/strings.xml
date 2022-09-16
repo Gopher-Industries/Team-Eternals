@@ -25,4 +25,10 @@
     <string name="existing_rewards_title">Existing Rewards</string>
     <string name="home_icon_rewards">home icon</string>
     <string name="back_icon_rewards">back icon</string>
+    <string name="HP_greetings">Hello,\nJOHN!</string>
+    <string name="HP_poinsts">Poinsts: 123</string>
+    <string name="my_medication">My Medication</string>
+    <string name="bt_view_all">View All</string>
+    <string name="my_report">My Report</string>
+    <string name="my_information">My Information</string>
 </resources>
