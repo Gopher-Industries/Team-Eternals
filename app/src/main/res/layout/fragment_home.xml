@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="Greetings"
+            android:textSize="48sp"
+            android:textColor="#013A8F"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/points_123"
+            android:textSize="24sp"
+            android:textColor="#013A8F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:background="#F6F7FB"
+            android:progressTint="#013A8F"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="#bed9ff"
+            app:layout_constraintTop_toBottomOf="@id/progressBar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/homeCardOneImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/arrow"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/homeCardOneTitle"/>
+
+                        <TextView
+                            android:id="@+id/homeCardOneTitle"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_medication"
+                            android:textAlignment="center"
+                            android:textColor="#013A8F"
+                            android:textSize="21sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardOneImage"
+                            app:layout_constraintBottom_toTopOf="@+id/homeCardOneButton"/>
+
+                        <Button
+                            android:id="@+id/homeCardOneButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="View All"
+                            android:textAlignment="center"
+                            app:cornerRadius="20dp"
+                            android:backgroundTint="#013A8F"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardOneTitle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/homeCardTwoImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/arrow"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/homeCardTwoTitle"/>
+
+                        <TextView
+                            android:id="@+id/homeCardTwoTitle"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="My Rewards"
+                            android:textAlignment="center"
+                            android:textColor="#013A8F"
+                            android:textSize="21sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardTwoImage"
+                            app:layout_constraintBottom_toTopOf="@+id/homeCardTwoButton"/>
+
+                        <Button
+                            android:id="@+id/homeCardTwoButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="View All"
+                            android:textAlignment="center"
+                            app:cornerRadius="20dp"
+                            android:backgroundTint="#013A8F"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardTwoTitle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/homeCardThreeImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/arrow"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/homeCardThreeTitle"/>
+
+                        <TextView
+                            android:id="@+id/homeCardThreeTitle"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="My Report"
+                            android:textAlignment="center"
+                            android:textColor="#013A8F"
+                            android:textSize="21sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardThreeImage"
+                            app:layout_constraintBottom_toTopOf="@+id/homeCardThreeButton"/>
+
+                        <Button
+                            android:id="@+id/homeCardThreeButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="View All"
+                            android:textAlignment="center"
+                            app:cornerRadius="20dp"
+                            android:backgroundTint="#013A8F"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardThreeTitle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/homeCardFourImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/arrow"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/homeCardFourTitle"/>
+
+                        <TextView
+                            android:id="@+id/homeCardFourTitle"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="My Information"
+                            android:textAlignment="center"
+                            android:textColor="#013A8F"
+                            android:textSize="21sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardFourImage"
+                            app:layout_constraintBottom_toTopOf="@+id/homeCardFourButton"/>
+
+                        <Button
+                            android:id="@+id/homeCardFourButton"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="View All"
+                            android:textAlignment="center"
+                            app:cornerRadius="20dp"
+                            android:backgroundTint="#013A8F"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/homeCardFourTitle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

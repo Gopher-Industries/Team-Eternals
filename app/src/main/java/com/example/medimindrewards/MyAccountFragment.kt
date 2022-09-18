@@ -25,6 +25,12 @@ class MyAccountFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.backButtonMyAccount.setOnClickListener {
+            findNavController().navigate(R.id.action_MyAccountFragment_to_HomeFragment)
+        }
+        binding.homeButtonMyAccount.setOnClickListener {
+            findNavController().navigate(R.id.action_MyAccountFragment_to_HomeFragment)
+        }
 
         }
     override fun onDestroyView() {

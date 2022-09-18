@@ -28,11 +28,8 @@
     <string name="time_of_day">Time of Day</string>
     <string name="medication_type">Medication Type</string>
     <string name="my_medication">My Medication</string>
-    <string name="todo">TODO</string>
-    <string name="todo1">TODO</string>
     <string name="next_appointment_10_days">Next Appointment: 10 Days</string>
     <string name="today">Today</string>
-    <string name="all_medication">All Medication</string>
     <string name="all_medication">All Medication</string>
     <string name="logo">Logo</string>
     <string name="medicine_name">Medicine name</string>
@@ -50,4 +47,5 @@
     <string name="view_all_item">VIEW ALL</string>
     <string name="my_report_title">My Report</string>
     <string name="date_placeholder_myreport">Date Placeholder</string>
+    <string name="points_123">Points: 123</string>
 </resources>

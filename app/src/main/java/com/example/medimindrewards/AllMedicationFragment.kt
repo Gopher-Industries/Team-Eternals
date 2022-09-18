@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.medimindrewards.databinding.FragmentMywishlistBinding
+import com.example.medimindrewards.databinding.FragmentAllmedicationBinding
 
-class MyWishlistFragment : Fragment() {
+class AllMedicationFragment : Fragment() {
 
-    private var _binding: FragmentMywishlistBinding? = null
+    private var _binding: FragmentAllmedicationBinding? = null
 
     private val binding get() = _binding!!
 
@@ -18,18 +18,18 @@ class MyWishlistFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMywishlistBinding.inflate(inflater, container, false)
+        _binding = FragmentAllmedicationBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.backButtonWishlist.setOnClickListener {
-            findNavController().navigate(R.id.action_MyWishlistFragment_to_MyRewardsFragment)
+        binding.backButtonAllMedication.setOnClickListener {
+            findNavController().navigate(R.id.action_AllMedicationFragment_to_MyMedicationFragment)
         }
-        binding.homeButtonWishlist.setOnClickListener {
-            findNavController().navigate(R.id.action_MyWishlistFragment_to_HomeFragment)
+        binding.homeButtonAllMedication.setOnClickListener {
+            findNavController().navigate(R.id.action_AllMedicationFragment_to_HomeFragment)
         }
     }
 

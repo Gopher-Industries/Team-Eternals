@@ -27,9 +27,9 @@
             tools:ignore="ContentDescription" />
 
         <ImageButton
-            android:id="@+id/homeButtonAllmedication"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
+            android:id="@+id/homeButtonAllMedication"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:backgroundTint="#E6E6E6"
             android:scaleType="fitCenter"
             android:src="@drawable/home"
@@ -37,7 +37,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintHorizontal_bias="0.98"
-            tools:ignore="ContentDescription" />
+            />
 
         <TextView
             android:id="@+id/AllMediactionTitle"
@@ -80,6 +80,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:contentDescription="@string/todo"
             tools:ignore="ContentDescription" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/allmedicationRecycler"
             android:layout_width="match_parent"
