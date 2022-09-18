@@ -48,7 +48,6 @@
             android:text="@string/existing_rewards_title"
             android:textColor="#013A8F"
             android:textSize="28sp"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

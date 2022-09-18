@@ -28,6 +28,9 @@ class ExistingRewardsFragment : Fragment() {
         binding.backButtonExistingRewards.setOnClickListener {
             findNavController().navigate(R.id.action_ExistingRewardsFragment_to_MyRewardsFragment)
         }
+        binding.homeButtonExistingRewards.setOnClickListener {
+            findNavController().navigate(R.id.action_ExistingRewardsFragment_to_HomeFragment)
+        }
     }
 
     override fun onDestroyView() {

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/backButtonAccount"
+            android:id="@+id/backButtonMyAccount"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:backgroundTint="#E6E6E6"
@@ -27,7 +27,7 @@
             />
 
         <ImageButton
-            android:id="@+id/homeButtonAccount"
+            android:id="@+id/homeButtonMyAccount"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:backgroundTint="#E6E6E6"

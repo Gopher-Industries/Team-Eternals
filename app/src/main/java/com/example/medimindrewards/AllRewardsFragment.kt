@@ -28,6 +28,9 @@ class AllRewardsFragment : Fragment() {
         binding.backButtonAllRewards.setOnClickListener {
             findNavController().navigate(R.id.action_AllRewardsFragment_to_MyRewardsFragment)
         }
+        binding.homeButtonAllRewards.setOnClickListener {
+            findNavController().navigate(R.id.action_AllRewardsFragment_to_HomeFragment)
+        }
     }
 
     override fun onDestroyView() {

@@ -3,14 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/MyRewardsNavigation">
+    app:startDestination="@id/HomeNavigation">
 
+    <!--Home navigation-->
+    <fragment
+        android:id="@+id/HomeNavigation"
+        android:name="com.example.medimindrewards.HomeFragment"
+        android:label="home label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_MyMedicationFragment"
+            app:destination="@+id/MyMedicationNavigation" />
+        <action
+            android:id="@+id/action_HomeFragment_to_MyRewardsFragment"
+            app:destination="@+id/MyRewardsNavigation" />
+        <action
+            android:id="@+id/action_HomeFragment_to_MyReportFragment"
+            app:destination="@+id/MyReportNavigation" />
+        <action
+            android:id="@+id/action_HomeFragment_to_MyInformationFragment"
+            app:destination="@+id/MyAccountNavigation" />
+    </fragment>
+
+    <!--My Account navigation-->
+    <fragment
+        android:id="@+id/MyAccountNavigation"
+        android:name="com.example.medimindrewards.MyAccountFragment"
+        android:label="my_account_label"
+        tools:layout="@layout/fragment_myaccount">
+
+        <action
+            android:id="@+id/action_MyAccountFragment_to_HomeFragment"
+            app:destination="@+id/HomeNavigation" />
+    </fragment>
+
+    <!--My Report navigation-->
+    <fragment
+        android:id="@+id/MyReportNavigation"
+        android:name="com.example.medimindrewards.MyReportFragment"
+        android:label="my_report_label"
+        tools:layout="@layout/fragment_myreport">
+
+        <action
+            android:id="@+id/action_MyReportFragment_to_HomeFragment"
+            app:destination="@+id/HomeNavigation" />
+    </fragment>
+
+    <!--My Rewards navigation-->
     <fragment
         android:id="@+id/MyRewardsNavigation"
         android:name="com.example.medimindrewards.MyRewardsFragment"
         android:label="@string/my_rewards_fragment_label"
         tools:layout="@layout/fragment_myrewards">
 
+        <action
+            android:id="@+id/action_MyRewardsFragment_to_HomeFragment"
+            app:destination="@+id/HomeNavigation" />
         <action
             android:id="@+id/action_MyRewardsFragment_to_MyWishlistFragment"
             app:destination="@id/MyWishlistNavigation" />
@@ -22,7 +71,7 @@
             app:destination="@id/ExistingRewardsNavigation" />
     </fragment>
 
-
+    <!--My Wishlist navigation-->
     <fragment
         android:id="@+id/MyWishlistNavigation"
         android:name="com.example.medimindrewards.MyWishlistFragment"
@@ -30,10 +79,14 @@
         tools:layout="@layout/fragment_mywishlist">
 
         <action
+            android:id="@+id/action_MyWishlistFragment_to_HomeFragment"
+            app:destination="@+id/HomeNavigation"/>
+        <action
             android:id="@+id/action_MyWishlistFragment_to_MyRewardsFragment"
             app:destination="@id/MyRewardsNavigation" />
     </fragment>
 
+    <!--All Rewards navigation-->
     <fragment
         android:id="@+id/AllRewardsNavigation"
         android:name="com.example.medimindrewards.AllRewardsFragment"
@@ -41,10 +94,14 @@
         tools:layout="@layout/fragment_allrewards">
 
         <action
+            android:id="@+id/action_AllRewardsFragment_to_HomeFragment"
+            app:destination="@id/HomeNavigation" />
+        <action
             android:id="@+id/action_AllRewardsFragment_to_MyRewardsFragment"
             app:destination="@id/MyRewardsNavigation" />
     </fragment>
 
+    <!--Existing Rewards navigation-->
     <fragment
         android:id="@+id/ExistingRewardsNavigation"
         android:name="com.example.medimindrewards.ExistingRewardsFragment"
@@ -52,7 +109,40 @@
         tools:layout="@layout/fragment_exisitngrewards">
 
         <action
+            android:id="@+id/action_ExistingRewardsFragment_to_HomeFragment"
+            app:destination="@id/HomeNavigation" />
+        <action
             android:id="@+id/action_ExistingRewardsFragment_to_MyRewardsFragment"
             app:destination="@id/MyRewardsNavigation" />
+    </fragment>
+
+    <!--My Medication navigation-->
+    <fragment
+        android:id="@+id/MyMedicationNavigation"
+        android:name="com.example.medimindrewards.MyMedicationFragment"
+        android:label="my_medication_fragment_label"
+        tools:layout="@layout/fragment_mymedication">
+
+        <action
+            android:id="@+id/action_MyMedicationFragment_to_HomeFragment"
+            app:destination="@id/HomeNavigation" />
+        <action
+            android:id="@+id/action_MyMedicationFragment_to_AllMedicationFragment"
+            app:destination="@id/AllMedicationNavigation" />
+    </fragment>
+
+    <!--All Medication navigation-->
+    <fragment
+        android:id="@+id/AllMedicationNavigation"
+        android:name="com.example.medimindrewards.AllMedicationFragment"
+        android:label="all_medication_fragment_label"
+        tools:layout="@layout/fragment_allmedication">
+
+        <action
+            android:id="@+id/action_AllMedicationFragment_to_HomeFragment"
+            app:destination="@id/HomeNavigation" />
+        <action
+            android:id="@+id/action_AllMedicationFragment_to_MyMedicationFragment"
+            app:destination="@id/MyMedicationNavigation" />
     </fragment>
 </navigation>

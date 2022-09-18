@@ -23,14 +23,21 @@ class MyRewardsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.backButtonRewards.setOnClickListener {
+            findNavController().navigate(R.id.action_MyRewardsFragment_to_HomeFragment)
+        }
+        binding.homeButtonRewards.setOnClickListener {
+            findNavController().navigate(R.id.action_MyRewardsFragment_to_HomeFragment)
+        }
         binding.wishlistButton.setOnClickListener {
             findNavController().navigate(R.id.action_MyRewardsFragment_to_MyWishlistFragment)
         }
-
+        binding.wishlistButton.setOnClickListener {
+            findNavController().navigate(R.id.action_MyRewardsFragment_to_MyWishlistFragment)
+        }
         binding.rewardsButton.setOnClickListener {
             findNavController().navigate(R.id.action_MyRewardsFragment_to_AllRewardsFragment)
         }
-
         binding.existingButton.setOnClickListener {
             findNavController().navigate(R.id.action_MyRewardsFragment_to_ExistingRewardsFragment)
         }
