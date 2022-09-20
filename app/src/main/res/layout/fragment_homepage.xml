@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="monospace"
+        android:text="@string/HP_greetings"
+        android:textSize="48sp"
+        android:textColor="@color/haitao_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/HP_poinsts"
+        android:textSize="24sp"
+        android:textColor="@color/haitao_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="#F6F7FB"
+        android:progressTint="@color/haitao_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/jing_tian_blue"
+        app:layout_constraintTop_toBottomOf="@id/progressBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="207dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginVertical="40dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/yun_feng_white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginVertical="25dp"
+                    android:layout_marginStart="55dp"
+                    android:src="@drawable/my_medication_icon" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginVertical="80dp"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/my_medication"
+                    android:textAlignment="center"
+                    android:textColor="@color/bt_blue"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="115dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/bt_view_all"
+                    android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginVertical="40dp"
+                android:layout_marginStart="20dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/yun_feng_white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginVertical="25dp"
+                    android:layout_marginStart="60dp"
+                    android:src="@drawable/rewards_icon" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginVertical="80dp"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/bt_blue"
+                    android:text="@string/my_rewards" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="115dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:textAlignment="center"
+                    android:text="@string/bt_view_all" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="207dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginVertical="15dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/yun_feng_white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginVertical="25dp"
+                    android:layout_marginStart="60dp"
+                    android:src="@drawable/my_report_icon"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginVertical="80dp"
+                    android:layout_marginStart="35dp"
+                    android:textAlignment="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/bt_blue"
+                    android:text="@string/my_report" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="115dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:textAlignment="center"
+                    android:text="@string/bt_view_all" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginStart="20dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/yun_feng_white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginVertical="25dp"
+                    android:layout_marginStart="60dp"
+                    android:src="@drawable/information_icon"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginVertical="80dp"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/bt_blue"
+                    android:text="@string/my_information" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="115dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/rounded_button"
+                    android:textAlignment="center"
+                    android:text="@string/bt_view_all" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
