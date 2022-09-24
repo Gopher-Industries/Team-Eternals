@@ -60,7 +60,7 @@
             android:layout_height="200dp"
             android:indeterminateOnly="false"
             android:progressDrawable="@drawable/circle"
-            tools:progress="60"
+            android:progress="60"
             android:layout_marginTop="40dp"
             app:layout_constraintTop_toBottomOf="@id/rewardsTitle"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -71,12 +71,12 @@
             android:id="@+id/pointsCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="60pts"
+            android:text="60pts"
             android:textSize="30sp"
             android:textColor="#013A8F"
             app:layout_constraintTop_toTopOf="@id/pointsProgressBar"
-            app:layout_constraintStart_toStartOf="@id/pointsProgressBar"
-            app:layout_constraintEnd_toEndOf="@id/pointsProgressBar"
+            app:layout_constraintLeft_toLeftOf="@id/pointsProgressBar"
+            app:layout_constraintRight_toRightOf="@id/pointsProgressBar"
             app:layout_constraintBottom_toBottomOf="@id/pointsProgressBar"/>
 
 

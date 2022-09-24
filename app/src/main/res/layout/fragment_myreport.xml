@@ -76,7 +76,7 @@
             android:layout_marginTop="8dp"
             android:layout_width="245dp"
             android:layout_height="wrap_content"
-            android:text="@string/date_placeholder_myreport"
+            android:text="18/09/2022"
             android:textSize="28sp"
             android:gravity="center"
             />
@@ -96,9 +96,9 @@
     <LinearLayout
         android:id="@+id/missedDoses"
         android:layout_width="380dp"
-        android:layout_height="240dp"
+        android:layout_height="250dp"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/layout_rounded"
         android:elevation="8dp"
         app:layout_constraintTop_toBottomOf="@id/date"
@@ -114,8 +114,14 @@
             android:text="Missed Doses"
             android:textColor="#013A8F"
             android:textSize="30sp"
-            android:layout_gravity="center">
-        </TextView>
+            android:layout_gravity="center"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/idBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -151,7 +157,7 @@
                 android:layout_height="200dp"
                 android:indeterminateOnly="false"
                 android:progressDrawable="@drawable/circle"
-                tools:progress="60"
+                android:progress="75"
                 android:layout_gravity="center"
                 />
 
@@ -161,15 +167,78 @@
                 android:layout_height="145dp"
                 android:layout_marginLeft="-173dp"
                 android:indeterminateOnly="false"
-                android:progressDrawable="@drawable/circle"
-                tools:progress="30"
+                android:progressDrawable="@drawable/circle2"
+                android:progress="25"
                 android:layout_gravity="center"
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="4 pills missed"
+                android:textColor="#013A8F"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-119dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="50dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/solid_circle2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taken"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20sp"
+                        android:textColor="#013A8F"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/solid_circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Missed"
+                        android:textSize="20sp"
+                        android:textColor="#013A8F"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

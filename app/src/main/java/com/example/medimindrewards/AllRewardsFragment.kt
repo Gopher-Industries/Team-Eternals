@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.medimindrewards.databinding.FragmentAllrewardsBinding
 
 class AllRewardsFragment : Fragment() {
@@ -13,6 +15,10 @@ class AllRewardsFragment : Fragment() {
     private var _binding: FragmentAllrewardsBinding? = null
 
     private val binding get() = _binding!!
+
+    private lateinit var newRecyclerView2: RecyclerView
+    private lateinit var newArrayList2: ArrayList<AllrewardsType>
+    lateinit var rewardTypeID: Array<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +37,36 @@ class AllRewardsFragment : Fragment() {
         binding.homeButtonAllRewards.setOnClickListener {
             findNavController().navigate(R.id.action_AllRewardsFragment_to_HomeFragment)
         }
+
+        rewardTypeID = arrayOf(
+            "Shopping",
+            "Food",
+            "Events",
+            "Health"
+
+        )
+
+        newRecyclerView2 = binding.allRewardsRecycler
+        newRecyclerView2.layoutManager = LinearLayoutManager(getContext())
+        newRecyclerView2.setHasFixedSize(true)
+
+        newArrayList2 = arrayListOf<AllrewardsType>()
+
+        getData()
     }
+
+    private fun getData() {
+
+        for(i in rewardTypeID.indices){
+            val type = AllrewardsType(rewardTypeID[i])
+            newArrayList2.add(type)
+        }
+
+        newRecyclerView2.adapter = AllrewardsAdapter(newArrayList2)
+
+
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
