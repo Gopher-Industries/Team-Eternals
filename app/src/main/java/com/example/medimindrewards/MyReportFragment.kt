@@ -46,37 +46,24 @@ class MyReportFragment : Fragment() {
         }
 
         barChart = view.findViewById(R.id.idBarChart)
-
         getBarChartData()
 
         barDataSet = BarDataSet(barEntriesList, "Bar Chart Data")
-
         barData = BarData(barDataSet)
-
         barChart.data = barData
-
         barDataSet.valueTextColor = Color.BLACK
-
         barDataSet.setColor(resources.getColor(R.color.main_blue))
-
         barDataSet.valueTextSize = 16f
-
         barChart.description.isEnabled = false
-
         barData.setDrawValues(false)
-
         barData.barWidth = 0.2f
-
         barData.setBarWidth(0.5f)
-
 
         val labels = arrayListOf(
             "M", "T", "W", "T", "F", "S", "S"
         )
-
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(labels)
         barChart.xAxis.position = XAxis.XAxisPosition.BOTTOM
-
         barChart.setDrawGridBackground(false)
         barChart.axisLeft.isEnabled = false
         barChart.axisRight.isEnabled = false
@@ -87,7 +74,6 @@ class MyReportFragment : Fragment() {
 
     private fun getBarChartData() {
         barEntriesList = ArrayList()
-
         barEntriesList.add(BarEntry(0f, 5f))
         barEntriesList.add(BarEntry(1f, 2f))
         barEntriesList.add(BarEntry(2f, 4f))

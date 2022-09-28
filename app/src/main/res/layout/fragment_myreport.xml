@@ -206,7 +206,6 @@
                         android:textSize="20sp"
                         android:textColor="#013A8F"
                         />
-
                 </LinearLayout>
 
                 <LinearLayout

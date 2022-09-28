@@ -27,5 +27,4 @@ class AllrewardsAdapter(private val allrewardsList: ArrayList<AllrewardsType>) :
         val rewardType : TextView = itemView.findViewById(R.id.typeID)
 
     }
-
 }
