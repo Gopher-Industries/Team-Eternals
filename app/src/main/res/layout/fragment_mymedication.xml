@@ -190,7 +190,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:text="2pm: Ibuprofen 200mg"
+                            android:text="2pm: Klanopin 4mg"
                             android:textColor="#013A8F"/>
 
                     </LinearLayout>
@@ -254,7 +254,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:text="9pm: Antibiotics x 2"
+                            android:text="9pm: Zoloft 25mg"
                             android:textColor="#013A8F"/>
 
                     </LinearLayout>

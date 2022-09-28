@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ExistingAdapter (private val existingList: ArrayList<ExistingVoucher>) : RecyclerView.Adapter<ExistingAdapter.MyViewHolder3>(){
+class ExistingAdapter (private val existingList: ArrayList<ExistingVoucher>) :
+    RecyclerView.Adapter<ExistingAdapter.MyViewHolder3>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder3 {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.existingrewards_item, parent, false)
