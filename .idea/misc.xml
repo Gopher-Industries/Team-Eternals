@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/drawable/circle_reminder_button.xml" value="0.3865" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/allmedication_item.xml" value="0.20104166666666667" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/allrewards_item.xml" value="0.184375" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/existingrewards_item.xml" value="0.184375" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/fragment_allmedication.xml" value="0.184375" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidProjects/T3/app/src/main/res/layout/fragment_reminder.xml" value="0.358695652173913" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.269" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.191" />
         <entry key="app/src/main/res/drawable/circle2.xml" value="0.1855" />

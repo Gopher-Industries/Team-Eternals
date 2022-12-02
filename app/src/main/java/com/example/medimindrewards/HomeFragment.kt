@@ -35,6 +35,9 @@ class HomeFragment : Fragment() {
         binding.homeCardFourButton.setOnClickListener {
             findNavController().navigate(R.id.action_HomeFragment_to_MyInformationFragment)
         }
+        binding.button2.setOnClickListener {
+            findNavController().navigate(R.id.action_HomeNavigation_to_reminderMain)
+        }
     }
 
     override fun onDestroyView() {
