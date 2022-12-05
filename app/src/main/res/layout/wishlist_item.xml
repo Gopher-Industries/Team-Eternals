@@ -25,21 +25,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/voucher"
-                android:textColor="#013A8F"
                 android:fontFamily="sans-serif"
-                android:textSize="25sp">
-            </TextView>
+                android:text="@string/voucher"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"></TextView>
+
             <TextView
                 android:id="@+id/wishlistItemID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/unknown"
-                android:textColor="#013A8F"
+                android:layout_marginStart="8dp"
                 android:fontFamily="sans-serif"
-                android:textSize="25sp"
-                android:layout_marginStart="8dp">
-            </TextView>
+                android:text="@string/unknown"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"></TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -51,20 +50,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/points1"
-                android:textColor="#013A8F"
                 android:fontFamily="sans-serif"
+                android:text="@string/points1"
+                android:textColor="@color/text_color"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/wishlistPointsID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/unknown"
-                android:textColor="#013A8F"
+                android:layout_marginStart="8dp"
                 android:fontFamily="sans-serif"
-                android:textSize="25sp"
-                android:layout_marginStart="8dp" />
+                android:text="@string/unknown"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
         </LinearLayout>
 
     </LinearLayout>

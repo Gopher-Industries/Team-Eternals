@@ -22,17 +22,17 @@
             android:id="@+id/typeID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/type_items"
-            android:textColor="#013A8F"
+            android:layout_marginEnd="30dp"
             android:fontFamily="sans-serif"
-            android:textSize="25sp"
-            android:layout_marginEnd="30dp">
-        </TextView>
+            android:text="@string/type_items"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"></TextView>
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#013A8F"
+            android:backgroundTint="@color/main_blue"
             android:text="@string/view_all_item"
             android:textSize="16sp"
             app:cornerRadius="18dp" />

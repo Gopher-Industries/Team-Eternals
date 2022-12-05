@@ -14,30 +14,28 @@
 
         <ImageButton
             android:id="@+id/backButtonAllMedication"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:backgroundTint="#E6E6E6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00E6E6E6"
             android:scaleType="fitCenter"
-            android:src="@drawable/arrow"
-            android:layout_marginTop="15dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.07"
+            android:src="@drawable/right"
+            app:layout_constraintHorizontal_bias="0.021"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/homeButtonAllMedication"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:backgroundTint="#E6E6E6"
+            android:backgroundTint="#00E6E6E6"
             android:scaleType="fitCenter"
-            android:src="@drawable/home"
-            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/home2"
+            app:layout_constraintHorizontal_bias="0.98"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintHorizontal_bias="0.98"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/AllMediactionTitle"
@@ -46,39 +44,38 @@
             android:layout_marginTop="22dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/all_medication"
-            android:textColor="#013A8F"
+            android:textColor="@color/text_highlighted"
             android:textSize="28sp"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/MedicinePlaceholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="55dp"
             android:text="@string/mental_health"
-            android:textColor="#013A8F"
+            android:textColor="@color/text_color"
             android:textSize="26sp"
-            app:layout_constraintTop_toBottomOf="@id/AllMediactionTitle"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@id/AllMediactionTitle" />
 
         <ImageButton
             android:id="@+id/plusbuttonAllmedication"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="#E6E6E6"
+            android:backgroundTint="#00E6E6E6"
+            android:contentDescription="@string/todo"
             android:scaleType="fitCenter"
             android:src="@drawable/plus"
             app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintTop_toBottomOf="@id/AllMediactionTitle"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toBottomOf="@id/AllMediactionTitle"
             tools:ignore="ContentDescription" />
 
         <androidx.recyclerview.widget.RecyclerView
