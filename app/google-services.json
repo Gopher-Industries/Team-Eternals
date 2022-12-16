@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "165844343550",
-    "firebase_url": "https://sit-22t1-medication-re-4181f0a-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "sit-22t1-medication-re-4181f0a",
-    "storage_bucket": "sit-22t1-medication-re-4181f0a.appspot.com"
+    "project_number": "36591033167",
+    "project_id": "gi-tes-reminder",
+    "storage_bucket": "gi-tes-reminder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:165844343550:android:5b732c38fec8eae14b23af",
+        "mobilesdk_app_id": "1:36591033167:android:808e4f6b5059634579033a",
         "android_client_info": {
-          "package_name": "com.example.medimindrewards"
+          "package_name": "com.gi_tes.reminder"
         }
       },
       "oauth_client": [
         {
-          "client_id": "165844343550-r12uqspo5nh99fj4srio48dv7vghj8i4.apps.googleusercontent.com",
+          "client_id": "36591033167-oe0oe5fbu610odsan62g5f2os4up6sda.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAgJ_a5yOE4qXb0fsmsdfFoSrKrnbMT6k0"
+          "current_key": "AIzaSyATXJUjDOiOQ3H65MOnp7WXHwleGe08bfE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "165844343550-r12uqspo5nh99fj4srio48dv7vghj8i4.apps.googleusercontent.com",
+              "client_id": "36591033167-oe0oe5fbu610odsan62g5f2os4up6sda.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
