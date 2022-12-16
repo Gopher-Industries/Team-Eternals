@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "36591033167",
-    "project_id": "gi-tes-reminder",
-    "storage_bucket": "gi-tes-reminder.appspot.com"
+    "project_number": "400460448442",
+    "project_id": "gopher-tes-reminder",
+    "storage_bucket": "gopher-tes-reminder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:36591033167:android:808e4f6b5059634579033a",
+        "mobilesdk_app_id": "1:400460448442:android:c0dcf54e30feade5ef7883",
         "android_client_info": {
-          "package_name": "com.gi_tes.reminder"
+          "package_name": "com.example.medimindrewards"
         }
       },
       "oauth_client": [
         {
-          "client_id": "36591033167-oe0oe5fbu610odsan62g5f2os4up6sda.apps.googleusercontent.com",
+          "client_id": "400460448442-p4sn6vt8t7nkgem574u556bveh0tisqo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyATXJUjDOiOQ3H65MOnp7WXHwleGe08bfE"
+          "current_key": "AIzaSyDTrObqjn1jA4jlq6UP1QsWCPpphCqPV-0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "36591033167-oe0oe5fbu610odsan62g5f2os4up6sda.apps.googleusercontent.com",
+              "client_id": "400460448442-p4sn6vt8t7nkgem574u556bveh0tisqo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
