@@ -25,8 +25,8 @@
             android:id="@+id/action_HomeFragment_to_MyInformationFragment"
             app:destination="@+id/MyAccountNavigation" />
         <action
-            android:id="@+id/action_HomeNavigation_to_reminderMain"
-            app:destination="@id/ReminderMain" />
+            android:id="@+id/action_HomeNavigation_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
     </fragment>
 
     <!--My Account navigation-->
@@ -149,11 +149,11 @@
             app:destination="@id/MyMedicationNavigation" />
     </fragment>
     <fragment
-        android:id="@+id/ReminderMain"
-        android:name="com.example.medimindrewards.ReminderMain"
-        android:label="ReminderMain" >
+        android:id="@+id/reminderFragment"
+        android:name="com.example.medimindrewards.ReminderFragment"
+        android:label="ReminderFragment" >
         <action
-            android:id="@+id/action_ReminderMain_to_HomeNavigation"
+            android:id="@+id/action_reminderFragment_to_HomeNavigation"
             app:destination="@id/HomeNavigation" />
     </fragment>
 </navigation>

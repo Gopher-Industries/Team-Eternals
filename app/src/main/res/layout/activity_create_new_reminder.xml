@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".CreateNewReminderItem">
+    tools:context=".ReminderActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -33,16 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/content"
-        android:layout_marginTop="25dp"
-        android:padding="10dp"
-        android:background="@color/light_pink"
-        android:textSize="18sp"
-        android:textColor="@color/black" />
-    <EditText
-        android:id="@+id/new_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/date"
         android:layout_marginTop="25dp"
         android:padding="10dp"
         android:background="@color/light_pink"
