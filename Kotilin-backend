@@ -1,0 +1,30 @@
+# Team-Eternals
+import java.util.Timer
+import java.util.TimerTask
+
+class MedicationReminderApp {
+    // Database connection and query functions are not shown
+
+    fun login(userID: Int) {
+        val userMedications = queryUserMedications(userID)
+        for (userMedication in userMedications) {
+            val medicationReminders = queryMedicationReminders(userMedication.medicationID)
+            for (medicationReminder in medicationReminders) {
+                setTimer(medicationReminder)
+            }
+        }
+    }
+
+    private fun setTimer(medicationReminder: MedicationReminder) {
+        val timer = Timer()
+        timer.schedule(object: TimerTask() {
+            override fun run() {
+                sendNotification(medicationReminder.userID, medicationReminder.message)
+            }
+        }, medicationReminder.time)
+    }
+
+    private fun sendNotification(userID: Int, message: String) {
+        // Send notification to user with specified ID and message
+    }
+}
