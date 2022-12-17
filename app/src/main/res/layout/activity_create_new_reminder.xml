@@ -65,7 +65,7 @@
             android:id="@+id/cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/cancel_new_reminder_btn"
             android:text="@string/cancel_new_reminder" />
