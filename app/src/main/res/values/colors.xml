@@ -10,5 +10,8 @@
     <color name="main_blue">#013A8F</color>
     <color name="xinglan">#93b5cf</color>
     <color name="light_pink">#e9d7df</color>
+    <color name="main_blue">#0071C7</color>
+    <color name="text_color">#333333</color>
+    <color name="text_highlighted">#009DD9</color>
 
 </resources>
