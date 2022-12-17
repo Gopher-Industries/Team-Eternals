@@ -48,4 +48,12 @@
     <string name="my_report_title">My Report</string>
     <string name="date_placeholder_myreport">Date Placeholder</string>
     <string name="points_123">Points: 123</string>
+    <string name="Reminder">Reminder</string>
+    <string name="ReminderButton">Reminder</string>
+    <string name="new_reminder">New Reminder</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="date">Date</string>
+    <string name="save_new_reminder">Save</string>
+    <string name="cancel_new_reminder">Cancel</string>
 </resources>
