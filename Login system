@@ -1,0 +1,72 @@
+# Team-Eternals[Uploading Login code.txt…]()
+import android.app.Activity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+
+class MainActivity : Activity() {
+
+    // Declare UI elements
+    private lateinit var accountNumberEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var MedicationNameEditText: EditText
+    private lateinit var loginButton: Button
+    private lateinit var queryButton: Button
+
+    // Declare database connection variables
+    private lateinit var connection: Connection
+    private lateinit var statement: Statement
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Initialize UI elements
+        accountNumberEditText = findViewById(R.id.account_number_edit_text)
+        passwordEditText = findViewById(R.id.password_edit_text)
+        MedicationNameEditText = findViewById(R.id.Medication_name_edit_text)
+        loginButton = findViewById(R.id.login_button)
+        queryButton = findViewById(R.id.query_button)
+
+        // Set up login button click listener
+        loginButton.setOnClickListener {
+            // Get entered account number and password
+            val accountNumber = accountNumberEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            // Validate login credentials
+            if (validateLogin(accountNumber, password)) {
+                // Login successful, enable query button
+                queryButton.isEnabled = true
+            } else {
+                // Login failed, show error message
+                Toast.makeText(this, "Invalid login credentials", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        // Set up query button click listener
+        queryButton.setOnClickListener {
+            // Get entered Medication name
+            val MedicationName = MedicationNameEditText.text.toString()
+
+            // Query the database for the Medication
+            val Medication = queryMedication(MedicationName)
+
+            // Show the result to the user
+            Toast.makeText(this, "Medication: $Medication", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    // Validates the entered login credentials
+    private fun validateLogin(accountNumber: String, password: String): Boolean {
+        // TODO: Validate login credentials against the database
+        return true
+    }
+
+    // Queries the database for the specified Medication
+    private fun queryMedication(MedicationName: String): String {
+        // TODO: Query the database for the Medication
+        return ""
+    }
+}

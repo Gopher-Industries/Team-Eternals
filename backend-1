@@ -1,0 +1,74 @@
+# Team-Eternals
+// Front-end code
+
+function logIn() {
+  // Send a request to the back-end to query the database for medication reminders
+  let userID = 1; // Replace with the actual user ID
+  let request = {
+    method: "POST",
+    url: "http://localhost:8080/queryMedicationReminders",
+    data: { userID }
+  };
+  axios(request)
+    .then(response => {
+      let medicationReminders = response.data;
+      // Set a timed task based on the returned data
+      medicationReminders.forEach(reminder => {
+        setTimeout(() => {
+          // Send a notification to the user at the corresponding time
+          sendNotification(reminder.message);
+        }, reminder.time);
+      });
+    })
+    .catch(error => {
+      // Handle error
+    });
+}
+
+function sendNotification(message) {
+  // Send the notification to the user
+  console.log(message);
+}
+
+// Back-end code
+
+// Set up the database connection
+const mysql = require("mysql");
+const db = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "medication_reminders"
+});
+
+// Set up the server
+const express = require("express");
+const app = express();
+const port = 8080;
+
+app.post("/queryMedicationReminders", (req, res) => {
+  let userID = req.body.userID;
+  // Query the database for the user's medication information
+  let sql = "SELECT * FROM UserMedications WHERE UserID = ?";
+  db.query(sql, [userID], (err, userMedications) => {
+    if (err) {
+      // Handle error
+      return;
+    }
+    // Use the medication IDs to query the MedicationReminder table
+    let medicationIDs = userMedications.map(medication => medication.MedicationID);
+    sql = "SELECT * FROM MedicationReminders WHERE MedicationID IN (?)";
+    db.query(sql, [medicationIDs], (err, medicationReminders) => {
+      if (err) {
+        // Handle error
+        return;
+      }
+      // Return the medication reminders to the front-end
+      res.json(medicationReminders);
+    });
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
